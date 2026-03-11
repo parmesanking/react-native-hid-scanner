@@ -8,8 +8,15 @@ import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.modules.core.DeviceEventManagerModule
 
 // ScannerModule.kt
-class ScannerModule(private val reactContext: ReactApplicationContext) :
-    ReactContextBaseJavaModule(reactContext) {
+class ScannerModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+
+    companion object {
+        var instance: ScannerModule? = null
+    }
+
+    init {
+        instance = this
+    }
 
     override fun getName() = "ScannerModule"
 
