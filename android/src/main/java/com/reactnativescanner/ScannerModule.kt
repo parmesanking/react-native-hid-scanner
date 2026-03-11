@@ -8,7 +8,8 @@ import com.facebook.react.bridge.ReactMethod
 import com.facebook.react.modules.core.DeviceEventManagerModule
 
 // ScannerModule.kt
-class ScannerModule(reactContext: ReactApplicationContext) : ReactContextBaseJavaModule(reactContext) {
+class ScannerModule(private val reactContext: ReactApplicationContext) :
+    ReactContextBaseJavaModule(reactContext) {
 
     companion object {
         var instance: ScannerModule? = null
