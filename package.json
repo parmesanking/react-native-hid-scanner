@@ -1,6 +1,6 @@
 {
   "name": "react-native-hid-scanner",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native native module for hardware barcode scanner integration on Android",
   "main": "src/index.ts",
   "types": "src/index.ts",
